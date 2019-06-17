@@ -56,6 +56,13 @@ public class jframe_MainMenu extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		JButton btnNumbersMagics = new JButton("Numbers Magics");
+		btnNumbersMagics.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				jframe_Numbers obj1=new  jframe_Numbers();
+				obj1.setVisible(true);//MOVE TO ANOTHER JFRAME
+				dispose();
+			}
+		});
 		btnNumbersMagics.setBounds(29, 124, 143, 40);
 		contentPane.add(btnNumbersMagics);
 	}
